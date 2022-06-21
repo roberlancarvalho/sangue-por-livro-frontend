@@ -1,0 +1,35 @@
+<div class="container">
+  <mat-toolbar class="navbar">
+    <img class="logo-top" src="../assets/img/logo.png" alt="logo-top" />
+
+    <div class="menu-container">
+      <button class="menu-item" mat-button>Início</button>
+
+      <button class="menu-item" mat-button>Sobre</button>
+
+      <button class="menu-item" mat-button>Livros</button>
+
+      <button class="menu-item" mat-button [matMenuTriggerFor]="aboveMenu">
+        Categorias
+        <mat-icon aria-hidden="false" aria-label="Example home icon"
+          >arrow_drop_down</mat-icon
+        >
+      </button>
+      <mat-menu #aboveMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Romance</button>
+        <button mat-menu-item>Suspense</button>
+        <button mat-menu-item>Ficção</button>
+        <button mat-menu-item>Não-ficção</button>
+        <button mat-menu-item>Suspense</button>
+      </mat-menu>
+
+      <button class="menu-item" mat-button>
+        <mat-icon aria-hidden="false" aria-label="Minha Conta">person</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <div class="imgs">
+    <img class="banner" src="../../../assets/img/Banner.png" alt="banner" />
+  </div>
+</div>
