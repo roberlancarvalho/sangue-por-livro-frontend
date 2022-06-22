@@ -17,6 +17,7 @@
 
 .copyright-area {
   height: 3rem;
+  width: 100%;
   background-color: #000;
   display: flex;
   flex-direction: column;
