@@ -26,7 +26,10 @@
   display: inline-block;
   flex-direction: column;
   width: 12rem;
-  padding: 0rem 3rem 0rem 3rem;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .img-book {
@@ -38,6 +41,11 @@
   opacity: 0.5;
   transition-delay: width 2s, height 4s;
   cursor: pointer;
+}
+
+button.price {
+  padding: 0rem 0rem 0rem 0rem;
+  margin-top: -0.3rem;
 }
 
 .price {
