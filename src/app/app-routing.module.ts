@@ -1,3 +1,4 @@
+import { RegisterComponent } from './pages/register/register.component';
 import { BookComponent } from './pages/book/book.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -7,9 +8,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'book', component: BookComponent },
-  { path: 'books', component: BooksComponent },
+  { path: 'livro/:{id}', component: BookComponent },
+  { path: 'livros', component: BooksComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'cadastro', component: RegisterComponent },
 ];
 
 @NgModule({
